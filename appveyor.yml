@@ -19,3 +19,12 @@ before_test:
 
 test_script:
   - bundle exec rake
+
+notifications:
+- provider: Slack
+  incoming_webhook: https://hooks.slack.com/services/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
+  channel: '@vbober'
+  template: cucumber-ruby/bv-contribution
+  on_build_success: true
+  on_build_failure: true
+  on_build_status_changed: true

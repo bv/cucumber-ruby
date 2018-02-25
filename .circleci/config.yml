@@ -104,4 +104,3 @@ workflows:
       - "ruby-2.3.5"
       - "ruby-2.2.8"
       - "jruby-9.1.13.0"
-      - publish
